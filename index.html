@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Isabella — Estudante de Desenvolvimento de Sistemas. Transformando ideias em projetos por meio da tecnologia.">
+  <title>Isabella | Portfólio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== TRIÂNGULOS GEOMÉTRICOS (La Boîte à Slide) ========== -->
+  <div class="geometric-triangles" aria-hidden="true">
+    <div class="triangle triangle-1"></div>
+    <div class="triangle triangle-2"></div>
+    <div class="triangle triangle-3"></div>
+    <div class="triangle triangle-4"></div>
+    <div class="triangle triangle-5"></div>
+    <div class="triangle triangle-6"></div>
+    <div class="triangle triangle-7"></div>
+    <div class="triangle triangle-8"></div>
+    <div class="triangle triangle-9"></div>
+    <div class="triangle triangle-10"></div>
+    <div class="triangle triangle-11"></div>
+    <div class="triangle triangle-12"></div>
+    <div class="triangle triangle-13"></div>
+    <div class="triangle triangle-14"></div>
+  </div>
+
+  <!-- ========== HEADER / NAV (Studio Namma) ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#inicio" class="nav__logo">
+Isabella
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#inicio" class="nav__link active-link">Início</a>
+          </li>
+          <li class="nav__item">
+            <a href="#sobre" class="nav__link">Sobre mim</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projetos" class="nav__link">Projetos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contato" class="nav__link">Contato</a>
+          </li>
+        </ul>
+        <button class="nav__close" id="nav-close" aria-label="Fechar menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="nav__actions">
+        <!-- Theme toggle (Studio Namma) -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Mobile menu toggle -->
+        <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main>
+
+    <!-- ===== HERO / INÍCIO (Sobha Privy Collection) ===== -->
+    <section class="hero section" id="inicio">
+      <!-- Elemento abstrato giratório ao fundo -->
+      <div class="hero__abstract" aria-hidden="true">
+        <div class="abstract-ring abstract-ring--1"></div>
+        <div class="abstract-ring abstract-ring--2"></div>
+        <div class="abstract-ring abstract-ring--3"></div>
+        <div class="abstract-ring abstract-ring--4"></div>
+      </div>
+
+      <div class="hero__content container">
+        <p class="hero__greeting reveal">Olá, eu sou</p>
+        <h1 class="hero__name reveal">Isabella</h1>
+        <p class="hero__title reveal">Estudante de Desenvolvimento de Sistemas</p>
+        <p class="hero__phrase reveal">"Transformando ideias em projetos por meio da tecnologia."</p>
+        <a href="#projetos" class="hero__button reveal">
+          <span>Ver meus projetos</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero__scroll" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span class="scroll-text">Role para baixo</span>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE MIM ===== -->
+    <section class="about section" id="sobre">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__subtitle">Conheça mais</p>
+          <h2 class="section__title">Sobre mim</h2>
+          <div class="section__line"></div>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__content reveal">
+            <p class="about__text">
+              Olá! Eu sou a <strong>Isabella</strong>, estudante de <strong>Desenvolvimento de Sistemas</strong>. Sou apaixonada por tecnologia e por transformar ideias em soluções reais por meio do desenvolvimento.
+            </p>
+            <p class="about__text">
+              Atualmente, estou em formação e buscando aprimorar meus conhecimentos em diversas tecnologias e metodologias de desenvolvimento. Acredito que a tecnologia tem o poder de transformar vidas e tornar o mundo mais conectado.
+            </p>
+          </div>
+
+          <div class="about__info reveal">
+            <div class="about__card">
+              <div class="about__card-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 10 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <h3 class="about__card-title">Formação</h3>
+              <p class="about__card-description">Desenvolvimento de Sistemas</p>
+            </div>
+
+            <div class="about__card">
+              <div class="about__card-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="about__card-title">Foco</h3>
+              <p class="about__card-description">Desenvolvimento Web</p>
+            </div>
+
+            <div class="about__card">
+              <div class="about__card-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <h3 class="about__card-title">Interesse</h3>
+              <p class="about__card-description">Tecnologia &amp; Inovação</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section class="projects section" id="projetos">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__subtitle">Meu trabalho</p>
+          <h2 class="section__title">Projetos</h2>
+          <div class="section__line"></div>
+        </div>
+
+        <div class="projects__empty reveal">
+          <div class="projects__empty-icon">
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3 class="projects__empty-title">Em breve</h3>
+          <p class="projects__empty-text">Meus projetos serão adicionados aqui conforme forem concluídos. Acompanhe minha jornada!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="contact section" id="contato">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__subtitle">Fale comigo</p>
+          <h2 class="section__title">Contato</h2>
+          <div class="section__line"></div>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <p class="contact__text">
+              Tem alguma ideia, proposta ou quer trocar uma ideia sobre tecnologia? Entre em contato comigo! Ficarei feliz em conversar.
+            </p>
+
+            <div class="contact__methods">
+              <div class="contact__method">
+                <div class="contact__method-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="contact__method-title">E-mail</h4>
+                  <a href="mailto:isabella.mcastro02@gmail.com" class="contact__method-link">isabella.mcastro02@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact__method">
+                <div class="contact__method-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="contact__method-title">GitHub</h4>
+                  <a href="https://github.com/isabellacastro02" target="_blank" rel="noopener noreferrer" class="contact__method-link">isabellacastro02</a>
+                </div>
+              </div>
+
+              <div class="contact__method">
+                <div class="contact__method-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="contact__method-title">Instagram</h4>
+                  <a href="https://instagram.com/isabellacastro7105" target="_blank" rel="noopener noreferrer" class="contact__method-link">@isabellacastro7105</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact__form reveal" id="contact-form" novalidate>
+            <div class="form__group">
+              <label for="name" class="form__label">Nome</label>
+              <input type="text" id="name" name="name" class="form__input" placeholder="Seu nome" required autocomplete="name">
+              <span class="form__error" id="name-error"></span>
+            </div>
+
+            <div class="form__group">
+              <label for="email" class="form__label">E-mail</label>
+              <input type="email" id="email" name="email" class="form__input" placeholder="seu@email.com" required autocomplete="email">
+              <span class="form__error" id="email-error"></span>
+            </div>
+
+            <div class="form__group">
+              <label for="subject" class="form__label">Assunto</label>
+              <input type="text" id="subject" name="subject" class="form__input" placeholder="Assunto da mensagem" required>
+              <span class="form__error" id="subject-error"></span>
+            </div>
+
+            <div class="form__group">
+              <label for="message" class="form__label">Mensagem</label>
+              <textarea id="message" name="message" class="form__input form__textarea" placeholder="Escreva sua mensagem..." rows="5" required></textarea>
+              <span class="form__error" id="message-error"></span>
+            </div>
+
+            <button type="submit" class="form__button">
+              <span>Enviar mensagem</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+
+            <!-- Mensagem de confirmação -->
+            <div class="form__success" id="form-success">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <p>Mensagem registrada com sucesso! Como este formulário não possui integração com um serviço de envio, sua mensagem não foi enviada. Para entrar em contato, utilize os meios listados ao lado.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#inicio" class="footer__logo">
+    Isabella
+          </a>
+          <p class="footer__description">Transformando ideias em projetos por meio da tecnologia.</p>
+        </div>
+
+        <div class="footer__nav">
+          <h4 class="footer__heading">Navegação</h4>
+          <ul class="footer__links">
+            <li><a href="#inicio" class="footer__link">Início</a></li>
+            <li><a href="#sobre" class="footer__link">Sobre mim</a></li>
+            <li><a href="#projetos" class="footer__link">Projetos</a></li>
+            <li><a href="#contato" class="footer__link">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__social">
+          <h4 class="footer__heading">Redes</h4>
+          <ul class="footer__links">
+            <li><a href="https://github.com/isabellacastro02" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a></li>
+            <li><a href="https://instagram.com/isabellacastro7105" target="_blank" rel="noopener noreferrer" class="footer__link">Instagram</a></li>
+            <li><a href="mailto:isabella.mcastro02@gmail.com" class="footer__link">E-mail</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Isabella. Todos os direitos reservados.</p>
+        <p class="footer__credits">Desenvolvido com <span class="footer__heart" aria-label="amor">&#10084;</span> por Isabella</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
