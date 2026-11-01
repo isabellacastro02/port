@@ -150,13 +150,37 @@
   const triangles = document.querySelectorAll('.triangle');
   const triangleData = [];
 
-  // Gerar velocidades e direções para cada triângulo
+  // Parâmetros calibrados para cada triângulo: deslocamento X, deslocamento Y, rotação e ângulo inicial
+  const defaultParams = [
+    { speedX: 0.08, speedY: -0.22, rot: 0.12, initial: 15 },
+    { speedX: -0.12, speedY: -0.32, rot: -0.16, initial: 45 },
+    { speedX: 0.06, speedY: -0.18, rot: 0.09, initial: -20 },
+    { speedX: -0.09, speedY: -0.28, rot: -0.14, initial: 30 },
+    { speedX: 0.11, speedY: -0.35, rot: 0.18, initial: -15 },
+    { speedX: -0.07, speedY: -0.24, rot: -0.11, initial: 60 },
+    { speedX: 0.10, speedY: -0.30, rot: 0.15, initial: 25 },
+    { speedX: -0.05, speedY: -0.16, rot: -0.08, initial: -35 },
+    { speedX: 0.07, speedY: -0.26, rot: 0.13, initial: 40 },
+    { speedX: -0.06, speedY: -0.20, rot: -0.10, initial: -10 },
+    { speedX: 0.12, speedY: -0.34, rot: 0.17, initial: 50 },
+    { speedX: -0.08, speedY: -0.22, rot: -0.12, initial: -45 },
+    { speedX: 0.09, speedY: -0.28, rot: 0.14, initial: 20 },
+    { speedX: -0.10, speedY: -0.30, rot: -0.15, initial: -25 }
+  ];
+
   triangles.forEach(function (triangle, index) {
+    const fallback = defaultParams[index % defaultParams.length];
+    const speedX = parseFloat(triangle.getAttribute('data-speed-x')) || fallback.speedX;
+    const speedY = parseFloat(triangle.getAttribute('data-speed-y')) || fallback.speedY;
+    const rotSpeed = parseFloat(triangle.getAttribute('data-rot')) || fallback.rot;
+    const initialRot = fallback.initial;
+
     triangleData.push({
       element: triangle,
-      speedX: (Math.random() - 0.5) * 0.3,
-      speedY: -(0.1 + Math.random() * 0.25),
-      rotation: (Math.random() - 0.5) * 0.15
+      speedX: speedX,
+      speedY: speedY,
+      rotSpeed: rotSpeed,
+      initialRot: initialRot
     });
   });
 
@@ -166,12 +190,12 @@
     const scrollY = window.scrollY;
 
     triangleData.forEach(function (data) {
-      var translateX = scrollY * data.speedX;
-      var translateY = scrollY * data.speedY;
-      var rotate = scrollY * data.rotation;
+      const translateX = scrollY * data.speedX;
+      const translateY = scrollY * data.speedY;
+      const rotate = data.initialRot + (scrollY * data.rotSpeed);
 
       data.element.style.transform =
-        'translate(' + translateX + 'px, ' + translateY + 'px) rotate(' + rotate + 'deg)';
+        'translate3d(' + translateX + 'px, ' + translateY + 'px, 0) rotate(' + rotate + 'deg)';
     });
   }
 

@@ -17,20 +17,48 @@
 
   <!-- ========== TRIÂNGULOS GEOMÉTRICOS (La Boîte à Slide) ========== -->
   <div class="geometric-triangles" aria-hidden="true">
-    <div class="triangle triangle-1"></div>
-    <div class="triangle triangle-2"></div>
-    <div class="triangle triangle-3"></div>
-    <div class="triangle triangle-4"></div>
-    <div class="triangle triangle-5"></div>
-    <div class="triangle triangle-6"></div>
-    <div class="triangle triangle-7"></div>
-    <div class="triangle triangle-8"></div>
-    <div class="triangle triangle-9"></div>
-    <div class="triangle triangle-10"></div>
-    <div class="triangle triangle-11"></div>
-    <div class="triangle triangle-12"></div>
-    <div class="triangle triangle-13"></div>
-    <div class="triangle triangle-14"></div>
+    <svg class="triangle triangle-1 triangle--filled" viewBox="0 0 100 100" data-speed-y="-0.22" data-speed-x="0.08" data-rot="0.12">
+      <polygon points="50,12 92,88 8,88" />
+    </svg>
+    <svg class="triangle triangle-2 triangle--outline" viewBox="0 0 100 100" data-speed-y="-0.32" data-speed-x="-0.12" data-rot="-0.16">
+      <polygon points="50,12 92,88 8,88" />
+    </svg>
+    <svg class="triangle triangle-3 triangle--outline" viewBox="0 0 100 100" data-speed-y="-0.18" data-speed-x="0.06" data-rot="0.09">
+      <polygon points="50,12 92,88 8,88" />
+    </svg>
+    <svg class="triangle triangle-4 triangle--filled" viewBox="0 0 100 100" data-speed-y="-0.28" data-speed-x="-0.09" data-rot="-0.14">
+      <polygon points="50,12 92,88 8,88" />
+    </svg>
+    <svg class="triangle triangle-5 triangle--outline" viewBox="0 0 100 100" data-speed-y="-0.35" data-speed-x="0.11" data-rot="0.18">
+      <polygon points="50,12 92,88 8,88" />
+    </svg>
+    <svg class="triangle triangle-6 triangle--filled" viewBox="0 0 100 100" data-speed-y="-0.24" data-speed-x="-0.07" data-rot="-0.11">
+      <polygon points="50,12 92,88 8,88" />
+    </svg>
+    <svg class="triangle triangle-7 triangle--outline" viewBox="0 0 100 100" data-speed-y="-0.30" data-speed-x="0.10" data-rot="0.15">
+      <polygon points="50,12 92,88 8,88" />
+    </svg>
+    <svg class="triangle triangle-8 triangle--filled" viewBox="0 0 100 100" data-speed-y="-0.16" data-speed-x="-0.05" data-rot="-0.08">
+      <polygon points="50,12 92,88 8,88" />
+    </svg>
+    <svg class="triangle triangle-9 triangle--outline" viewBox="0 0 100 100" data-speed-y="-0.26" data-speed-x="0.07" data-rot="0.13">
+      <polygon points="50,12 92,88 8,88" />
+    </svg>
+    <svg class="triangle triangle-10 triangle--filled" viewBox="0 0 100 100" data-speed-y="-0.20" data-speed-x="-0.06" data-rot="-0.10">
+      <polygon points="50,12 92,88 8,88" />
+    </svg>
+    <svg class="triangle triangle-11 triangle--outline" viewBox="0 0 100 100" data-speed-y="-0.34" data-speed-x="0.12" data-rot="0.17">
+      <polygon points="50,12 92,88 8,88" />
+    </svg>
+    <svg class="triangle triangle-12 triangle--filled" viewBox="0 0 100 100" data-speed-y="-0.22" data-speed-x="-0.08" data-rot="-0.12">
+      <polygon points="50,12 92,88 8,88" />
+    </svg>
+    <svg class="triangle triangle-13 triangle--outline" viewBox="0 0 100 100" data-speed-y="-0.28" data-speed-x="0.09" data-rot="0.14">
+      <polygon points="50,12 92,88 8,88" />
+    </svg>
+    <svg class="triangle triangle-14 triangle--filled" viewBox="0 0 100 100" data-speed-y="-0.30" data-speed-x="-0.10" data-rot="-0.15">
+      <polygon points="50,12 92,88 8,88" />
+    </svg>
   </div>
 
   <!-- ========== HEADER / NAV (Studio Namma) ========== -->
@@ -131,55 +159,135 @@ Isabella
     <!-- ===== SOBRE MIM ===== -->
     <section class="about section" id="sobre">
       <div class="container">
-        <div class="section__header reveal">
-          <p class="section__subtitle">Conheça mais</p>
-          <h2 class="section__title">Sobre mim</h2>
+        <div class="section__header section__header--clean reveal">
+          <h2 class="section__title section__title--pink">Sobre mim</h2>
           <div class="section__line"></div>
         </div>
 
-        <div class="about__grid">
-          <div class="about__content reveal">
-            <p class="about__text">
-              Olá! Eu sou a <strong>Isabella</strong>, estudante de <strong>Desenvolvimento de Sistemas</strong>. Sou apaixonada por tecnologia e por transformar ideias em soluções reais por meio do desenvolvimento.
-            </p>
-            <p class="about__text">
-              Atualmente, estou em formação e buscando aprimorar meus conhecimentos em diversas tecnologias e metodologias de desenvolvimento. Acredito que a tecnologia tem o poder de transformar vidas e tornar o mundo mais conectado.
-            </p>
-          </div>
+        <!-- Texto de apresentação centralizado -->
+        <div class="about__intro reveal">
+          <p class="about__intro-text">
+            Olá! Eu sou a <strong>Isabella</strong>, estudante de <strong>Desenvolvimento de Sistemas</strong>. Sou apaixonada por tecnologia e por transformar ideias em soluções reais por meio do desenvolvimento.
+          </p>
+          <p class="about__intro-text">
+            Atualmente, estou em formação e buscando aprimorar meus conhecimentos em diversas tecnologias e metodologias de desenvolvimento. Acredito que a tecnologia tem o poder de transformar vidas e tornar o mundo mais conectado.
+          </p>
+        </div>
 
-          <div class="about__info reveal">
+        <!-- Organização em duas colunas lado a lado -->
+        <div class="about__columns reveal">
+          <!-- Coluna da esquerda: Formação, atuação e lema -->
+          <div class="about__column about__column--details">
             <div class="about__card">
-              <div class="about__card-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <div class="about__card-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                   <path d="M6 12v5c3 3 10 3 12 0v-5"></path>
                 </svg>
               </div>
-              <h3 class="about__card-title">Formação</h3>
-              <p class="about__card-description">Desenvolvimento de Sistemas</p>
+              <div class="about__card-content">
+                <span class="about__card-label">Formação</span>
+                <h3 class="about__card-title">Técnico em Tecnologia da Informação</h3>
+              </div>
             </div>
 
             <div class="about__card">
-              <div class="about__card-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="16 18 22 12 16 6"></polyline>
-                  <polyline points="8 6 2 12 8 18"></polyline>
+              <div class="about__card-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
                 </svg>
               </div>
-              <h3 class="about__card-title">Foco</h3>
-              <p class="about__card-description">Desenvolvimento Web</p>
+              <div class="about__card-content">
+                <span class="about__card-label">Atuação</span>
+                <h3 class="about__card-title">Estudante de Desenvolvimento de Sistemas</h3>
+              </div>
             </div>
 
             <div class="about__card">
-              <div class="about__card-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                  <path d="M2 17l10 5 10-5"></path>
-                  <path d="M2 12l10 5 10-5"></path>
+              <div class="about__card-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                  <circle cx="12" cy="12" r="4"></circle>
                 </svg>
               </div>
-              <h3 class="about__card-title">Interesse</h3>
-              <p class="about__card-description">Tecnologia &amp; Inovação</p>
+              <div class="about__card-content">
+                <span class="about__card-label">Lema</span>
+                <h3 class="about__card-title">Transformando ideias em projetos por meio da tecnologia.</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna da direita: Tecnologias -->
+          <div class="about__column about__column--tech">
+            <div class="about__tech-box">
+              <div class="about__tech-box-header">
+                <div class="about__tech-box-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <h3 class="about__tech-box-title">Tecnologias</h3>
+              </div>
+
+              <div class="about__tech-cards">
+                <div class="about__tech-card">
+                  <div class="about__tech-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                      <polyline points="2 17 12 22 22 17"></polyline>
+                      <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                  </div>
+                  <span class="about__tech-name">JavaScript</span>
+                </div>
+
+                <div class="about__tech-card">
+                  <div class="about__tech-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                      <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                      <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                      <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                    </svg>
+                  </div>
+                  <span class="about__tech-name">Node.js</span>
+                </div>
+
+                <div class="about__tech-card">
+                  <div class="about__tech-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(0 12 12)"></ellipse>
+                      <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(60 12 12)"></ellipse>
+                      <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(120 12 12)"></ellipse>
+                      <circle cx="12" cy="12" r="2" fill="currentColor"></circle>
+                    </svg>
+                  </div>
+                  <span class="about__tech-name">React</span>
+                </div>
+
+                <div class="about__tech-card">
+                  <div class="about__tech-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 3l1.5 15L12 21l6.5-3L20 3H4z"></path>
+                      <path d="M8 7h8l-1 9-3 1-3-1-0.5-4"></path>
+                    </svg>
+                  </div>
+                  <span class="about__tech-name">HTML</span>
+                </div>
+
+                <div class="about__tech-card">
+                  <div class="about__tech-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 3l1.5 15L12 21l6.5-3L20 3H4z"></path>
+                      <path d="M7.5 7.5h9M8 11.5h8M8.5 15.5l3.5 1 3.5-1"></path>
+                    </svg>
+                  </div>
+                  <span class="about__tech-name">CSS</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -189,21 +297,146 @@ Isabella
     <!-- ===== PROJETOS ===== -->
     <section class="projects section" id="projetos">
       <div class="container">
-        <div class="section__header reveal">
-          <p class="section__subtitle">Meu trabalho</p>
-          <h2 class="section__title">Projetos</h2>
+        <div class="section__header section__header--clean reveal">
+          <h2 class="section__title section__title--pink">Projetos</h2>
           <div class="section__line"></div>
         </div>
 
-        <div class="projects__empty reveal">
-          <div class="projects__empty-icon">
-            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <polyline points="16 18 22 12 16 6"></polyline>
-              <polyline points="8 6 2 12 8 18"></polyline>
-            </svg>
-          </div>
-          <h3 class="projects__empty-title">Em breve</h3>
-          <p class="projects__empty-text">Meus projetos serão adicionados aqui conforme forem concluídos. Acompanhe minha jornada!</p>
+        <div class="projects__grid reveal">
+          <!-- Projeto 1 — Sistema de Login -->
+          <article class="project__card">
+            <div class="project__image">
+              <img src="img/projeto-login.png" alt="Tela inicial do Sistema de Login" class="project__img" loading="lazy">
+              <span class="project__tag-number">01</span>
+            </div>
+            <div class="project__info">
+              <h3 class="project__title">Sistema de Login</h3>
+              <p class="project__description">
+                Aplicação de autenticação em React com telas de login, cadastro de usuário e tabela de listagem interativa com ações de edição e exclusão de cadastros.
+              </p>
+              <div class="project__tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">CRUD</span>
+              </div>
+              <a href="https://projeto-login-snowy.vercel.app/" target="_blank" rel="noopener noreferrer" class="project__button">
+                <span>Visualizar projeto</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 2 — BioConecta -->
+          <article class="project__card">
+            <div class="project__image">
+              <img src="img/bioconecta.png" alt="Tela inicial da plataforma BioConecta" class="project__img" loading="lazy">
+              <span class="project__tag-number">02</span>
+            </div>
+            <div class="project__info">
+              <h3 class="project__title">BioConecta</h3>
+              <p class="project__description">
+                Plataforma web de apoio à disciplina de Biologia criada para auxiliar professores e alunos no ensino, organização e acompanhamento de atividades escolares.
+              </p>
+              <div class="project__tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <a href="https://backend-liard-omega-89.vercel.app/" target="_blank" rel="noopener noreferrer" class="project__button">
+                <span>Visualizar projeto</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 3 — RPG -->
+          <article class="project__card">
+            <div class="project__image">
+              <img src="img/rpg.png" alt="Tela inicial do projeto RPG" class="project__img" loading="lazy">
+              <span class="project__tag-number">03</span>
+            </div>
+            <div class="project__info">
+              <h3 class="project__title">RPG</h3>
+              <p class="project__description">
+                Aplicação interativa desenvolvida em React com gerenciamento de estados dinâmicos para consulta e acompanhamento de notas escolares, status de aprovação e métricas por disciplina.
+              </p>
+              <div class="project__tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Hooks</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <a href="https://rpg-ag.vercel.app/" target="_blank" rel="noopener noreferrer" class="project__button">
+                <span>Visualizar projeto</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 4 — Apple Manager -->
+          <article class="project__card">
+            <div class="project__image">
+              <img src="img/apple-manager.png" alt="Tela inicial do Apple Manager" class="project__img" loading="lazy">
+              <span class="project__tag-number">04</span>
+            </div>
+            <div class="project__info">
+              <h3 class="project__title">Apple Manager</h3>
+              <p class="project__description">
+                Mini sistema moderno para cadastro e gerenciamento de aparelhos Apple, com catálogo de dispositivos, especificações e verificação de status de conexão com API.
+              </p>
+              <div class="project__tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">API</span>
+              </div>
+              <a href="https://apple-9uku.vercel.app/" target="_blank" rel="noopener noreferrer" class="project__button">
+                <span>Visualizar projeto</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 5 — TCC -->
+          <article class="project__card">
+            <div class="project__image">
+              <img src="img/tcc.png" alt="Tela inicial do projeto de TCC R.tual Hair Care" class="project__img" loading="lazy">
+              <span class="project__tag-number">05</span>
+            </div>
+            <div class="project__info">
+              <h3 class="project__title">TCC</h3>
+              <p class="project__description">
+                Projeto de TCC (R.tual Hair Care) desenvolvido em React: plataforma para salão de beleza e cuidados capilares, com apresentação de serviços de corte, coloração e agendamentos.
+              </p>
+              <div class="project__tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">UI/UX</span>
+              </div>
+              <a href="https://tcc-final-kappa.vercel.app/" target="_blank" rel="noopener noreferrer" class="project__button">
+                <span>Visualizar projeto</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -211,102 +444,90 @@ Isabella
     <!-- ===== CONTATO ===== -->
     <section class="contact section" id="contato">
       <div class="container">
-        <div class="section__header reveal">
-          <p class="section__subtitle">Fale comigo</p>
-          <h2 class="section__title">Contato</h2>
+        <div class="section__header section__header--clean reveal">
+          <h2 class="section__title section__title--pink">Contato</h2>
           <div class="section__line"></div>
         </div>
 
-        <div class="contact__grid">
-          <div class="contact__info reveal">
-            <p class="contact__text">
-              Tem alguma ideia, proposta ou quer trocar uma ideia sobre tecnologia? Entre em contato comigo! Ficarei feliz em conversar.
-            </p>
+        <div class="contact__wrapper reveal">
+          <!-- Métodos diretos de contato -->
+          <div class="contact__methods-bar">
+            <a href="mailto:isabella.mcastro02@gmail.com" class="contact__pill">
+              <span class="contact__pill-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </span>
+              <span class="contact__pill-text">isabella.mcastro02@gmail.com</span>
+            </a>
 
-            <div class="contact__methods">
-              <div class="contact__method">
-                <div class="contact__method-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="contact__method-title">E-mail</h4>
-                  <a href="mailto:isabella.mcastro02@gmail.com" class="contact__method-link">isabella.mcastro02@gmail.com</a>
-                </div>
-              </div>
+            <a href="https://github.com/isabellacastro02" target="_blank" rel="noopener noreferrer" class="contact__pill">
+              <span class="contact__pill-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </span>
+              <span class="contact__pill-text">GitHub</span>
+            </a>
 
-              <div class="contact__method">
-                <div class="contact__method-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="contact__method-title">GitHub</h4>
-                  <a href="https://github.com/isabellacastro02" target="_blank" rel="noopener noreferrer" class="contact__method-link">isabellacastro02</a>
-                </div>
-              </div>
-
-              <div class="contact__method">
-                <div class="contact__method-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="contact__method-title">Instagram</h4>
-                  <a href="https://instagram.com/isabellacastro7105" target="_blank" rel="noopener noreferrer" class="contact__method-link">@isabellacastro7105</a>
-                </div>
-              </div>
-            </div>
+            <a href="https://instagram.com/isabellacastro7105" target="_blank" rel="noopener noreferrer" class="contact__pill">
+              <span class="contact__pill-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </span>
+              <span class="contact__pill-text">Instagram</span>
+            </a>
           </div>
 
-          <form class="contact__form reveal" id="contact-form" novalidate>
-            <div class="form__group">
-              <label for="name" class="form__label">Nome</label>
-              <input type="text" id="name" name="name" class="form__input" placeholder="Seu nome" required autocomplete="name">
-              <span class="form__error" id="name-error"></span>
-            </div>
+          <!-- Caixa envolvendo todo o formulário (conforme Imagem 2) -->
+          <div class="contact__box">
+            <form class="contact__form" id="contact-form" novalidate>
+              <div class="form__group">
+                <label for="name" class="form__label">Nome</label>
+                <input type="text" id="name" name="name" class="form__input" placeholder="Seu nome" required autocomplete="name">
+                <span class="form__error" id="name-error"></span>
+              </div>
 
-            <div class="form__group">
-              <label for="email" class="form__label">E-mail</label>
-              <input type="email" id="email" name="email" class="form__input" placeholder="seu@email.com" required autocomplete="email">
-              <span class="form__error" id="email-error"></span>
-            </div>
+              <div class="form__group">
+                <label for="email" class="form__label">E-mail</label>
+                <input type="email" id="email" name="email" class="form__input" placeholder="seu@email.com" required autocomplete="email">
+                <span class="form__error" id="email-error"></span>
+              </div>
 
-            <div class="form__group">
-              <label for="subject" class="form__label">Assunto</label>
-              <input type="text" id="subject" name="subject" class="form__input" placeholder="Assunto da mensagem" required>
-              <span class="form__error" id="subject-error"></span>
-            </div>
+              <div class="form__group">
+                <label for="subject" class="form__label">Assunto</label>
+                <input type="text" id="subject" name="subject" class="form__input" placeholder="Assunto da mensagem" required>
+                <span class="form__error" id="subject-error"></span>
+              </div>
 
-            <div class="form__group">
-              <label for="message" class="form__label">Mensagem</label>
-              <textarea id="message" name="message" class="form__input form__textarea" placeholder="Escreva sua mensagem..." rows="5" required></textarea>
-              <span class="form__error" id="message-error"></span>
-            </div>
+              <div class="form__group">
+                <label for="message" class="form__label">Mensagem</label>
+                <textarea id="message" name="message" class="form__input form__textarea" placeholder="Escreva sua mensagem..." rows="5" required></textarea>
+                <span class="form__error" id="message-error"></span>
+              </div>
 
-            <button type="submit" class="form__button">
-              <span>Enviar mensagem</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="22" y1="2" x2="11" y2="13"></line>
-                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-              </svg>
-            </button>
+              <button type="submit" class="form__button">
+                <span>Enviar mensagem</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
 
-            <!-- Mensagem de confirmação -->
-            <div class="form__success" id="form-success">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-              </svg>
-              <p>Mensagem registrada com sucesso! Como este formulário não possui integração com um serviço de envio, sua mensagem não foi enviada. Para entrar em contato, utilize os meios listados ao lado.</p>
-            </div>
-          </form>
+              <!-- Mensagem de confirmação -->
+              <div class="form__success" id="form-success">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <p>Mensagem registrada com sucesso! Como este formulário não possui integração com um serviço de envio, sua mensagem não foi enviada. Para entrar em contato, utilize os meios listados acima.</p>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
